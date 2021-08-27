@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IDFA_Apple_sign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="bJw-Dq-dZb">
+                                <rect key="frame" x="62" y="389" width="290" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNb-1S-amw">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="S5R-et-5EV"/>
+                                        </constraints>
+                                        <state key="normal" title="IDFA追蹤">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="trackingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbZ-o7-zJ7"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdw-k7-8Qe">
+                                        <rect key="frame" x="0.0" y="74" width="290" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jdw-k7-8Qe" firstAttribute="height" secondItem="XNb-1S-amw" secondAttribute="height" id="IQC-nA-ha8"/>
+                                    <constraint firstItem="jdw-k7-8Qe" firstAttribute="width" secondItem="bJw-Dq-dZb" secondAttribute="width" id="UIv-Z7-Chi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bJw-Dq-dZb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="26k-pj-aKk"/>
+                            <constraint firstItem="bJw-Dq-dZb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6VL-b7-Tm5"/>
+                            <constraint firstItem="bJw-Dq-dZb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="IJt-wO-DQ4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleSignInView" destination="jdw-k7-8Qe" id="L6s-DS-o9u"/>
+                        <outlet property="trackingButton" destination="XNb-1S-amw" id="tvN-g5-fMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="77"/>
+        </scene>
+        <!--View Controller Buttons-->
+        <scene sceneID="om1-Yf-beF">
+            <objects>
+                <viewController id="xQn-sw-21n" customClass="ViewControllerButtons" customModule="IDFA_Apple_sign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rcV-3u-clW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zs2-hz-PJJ">
+                                <rect key="frame" x="41.5" y="134" width="331" height="638"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orW-Q5-L4e">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="XvL-Bo-BS7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-Sa-3tK">
+                                        <rect key="frame" x="0.0" y="54" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Cj9-4k-ggo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-BX-QvI">
+                                        <rect key="frame" x="0.0" y="108" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="yxW-9m-wpy"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMj-rc-1jh">
+                                        <rect key="frame" x="0.0" y="162" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="506-vw-z6d"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-5e-n0x">
+                                        <rect key="frame" x="0.0" y="216" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Uoo-hA-cMT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-BT-rSR">
+                                        <rect key="frame" x="0.0" y="270" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="niv-cJ-gaK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDT-Lo-nbe">
+                                        <rect key="frame" x="0.0" y="324" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="g39-g4-JnN"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0O-Nq-hLk">
+                                        <rect key="frame" x="0.0" y="378" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="4j5-Dp-kSg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TJ-aY-C9U">
+                                        <rect key="frame" x="0.0" y="432" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="lL3-Ml-ogp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-lx-qB1">
+                                        <rect key="frame" x="0.0" y="486" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="pIm-mQ-puL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhM-hn-Uyo">
+                                        <rect key="frame" x="0.0" y="540" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Gtv-QU-NgK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFk-Fr-wqK">
+                                        <rect key="frame" x="0.0" y="594" width="331" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="K8y-Jn-UN5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0mj-Dv-vTw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zs2-hz-PJJ" firstAttribute="centerX" secondItem="0mj-Dv-vTw" secondAttribute="centerX" id="5gt-wN-UZh"/>
+                            <constraint firstItem="zs2-hz-PJJ" firstAttribute="centerY" secondItem="0mj-Dv-vTw" secondAttribute="centerY" id="d4N-er-CXc"/>
+                            <constraint firstItem="zs2-hz-PJJ" firstAttribute="width" secondItem="rcV-3u-clW" secondAttribute="width" multiplier="0.8" id="qL8-z5-8Zg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleSignInView1" destination="orW-Q5-L4e" id="Ukg-4X-hgp"/>
+                        <outlet property="appleSignInView10" destination="BgC-lx-qB1" id="IFL-F8-cSh"/>
+                        <outlet property="appleSignInView11" destination="AhM-hn-Uyo" id="5LA-cQ-AL1"/>
+                        <outlet property="appleSignInView12" destination="CFk-Fr-wqK" id="eRL-Po-Tx7"/>
+                        <outlet property="appleSignInView2" destination="4sQ-Sa-3tK" id="EHe-lq-n5y"/>
+                        <outlet property="appleSignInView3" destination="Sgv-BX-QvI" id="rol-Kh-qDN"/>
+                        <outlet property="appleSignInView4" destination="pMj-rc-1jh" id="gb9-hY-Pan"/>
+                        <outlet property="appleSignInView5" destination="fZu-5e-n0x" id="Fe2-uI-Okx"/>
+                        <outlet property="appleSignInView6" destination="G2w-BT-rSR" id="trk-4q-jqK"/>
+                        <outlet property="appleSignInView7" destination="PDT-Lo-nbe" id="uv2-wz-dmk"/>
+                        <outlet property="appleSignInView8" destination="m0O-Nq-hLk" id="bQJ-uP-bEp"/>
+                        <outlet property="appleSignInView9" destination="0TJ-aY-C9U" id="B59-dy-F76"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sc5-gT-AQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
